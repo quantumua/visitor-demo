@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ProcessorImpl implements Processor {
 
-    private List<Service> services = Arrays.asList(new AService(), new BService());
+    private List<Service> services = Arrays.asList(new AServiceImpl(), new BServiceImpl());
 
     @Override
     public void process(BaseRequest request) {

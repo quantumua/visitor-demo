@@ -1,8 +1,14 @@
-HELP.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**
-!**/src/test/**
+.mvn/
+mvnw
+mvnw.cmd
+test-output/
+upload-dir/
+public/
+*.log.gz
+*.orig
+*.jar
+*.sh
 
 ### STS ###
 .apt_generated
@@ -11,21 +17,20 @@ target/
 .project
 .settings
 .springBeans
-.sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
 
 ### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+nbproject/private/
 build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
-### VS Code ###
-.vscode/
+### Eclipse ###
+.metadata/

@@ -8,19 +8,17 @@ public class App {
         processor.process(getBRequest());
     }
 
-    public static ARequest getARequest(){
-        ARequest aRequest = new ARequest();
+    private static BaseRequest<ARequest> getARequest() {
+        ARequestImpl aRequest = new ARequestImpl();
         aRequest.setField1("aField1");
         aRequest.setField2("aField2");
-        aRequest.setFieldA("aFieldA");
         return aRequest;
     }
 
-    public static BRequest getBRequest(){
-        BRequest bRequest = new BRequest();
+    private static BaseRequest<BRequest> getBRequest() {
+        BRequestImpl bRequest = new BRequestImpl();
         bRequest.setField1("bField1");
         bRequest.setField2("bField2");
-        bRequest.setFieldB("bFieldB");
         return bRequest;
     }
 }

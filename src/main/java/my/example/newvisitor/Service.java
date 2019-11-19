@@ -1,5 +1,5 @@
 package my.example.newvisitor;
 
-public interface Service<T extends BaseRequest> extends Visitor {
-    String getCounter(T request);
+public interface Service< T, E extends BaseRequest<T>> extends Visitor {
+    String getCounter(E request);
 }

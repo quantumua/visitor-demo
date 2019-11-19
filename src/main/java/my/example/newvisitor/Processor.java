@@ -1,5 +1,5 @@
 package my.example.newvisitor;
 
-public interface Processor<T extends BaseRequest> {
-    void process(T request);
+public interface Processor  {
+    void process(BaseRequest request);
 }

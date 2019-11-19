@@ -2,7 +2,7 @@ package my.example.newvisitor;
 
 public interface Visitor {
 
-    String visitFromAService(ARequest request);
+    String visitFromAService(BaseRequest<ARequest> request);
 
-    String visitFromBService(BRequest request);
+    String visitFromBService(BaseRequest<BRequest> request);
 }

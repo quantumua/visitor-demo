@@ -1,6 +1,6 @@
 package my.example.newvisitor;
 
-public abstract class BaseRequest {
+public abstract class BaseRequest<T> {
     private String field1;
     private String field2;
 
